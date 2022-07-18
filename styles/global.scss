@@ -69,69 +69,6 @@ h3 {
     color: #83a598;
 }
 
-.menu {
-    border: 0;
-    background-color: #ebdbb2;
-    display: none;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-@media screen and (max-width: 768px) {
-    .menu {
-        display: flex;
-        margin-left: auto;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .nav {
-        justify-content: space-between;
-    }
-
-    .menu {
-        margin-left: 0;
-    }
-
-    li.nav-item {
-        margin: 0;
-    }
-
-    ul.nav-items-expanded {
-        padding: 0;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    ul.nav-items {
-        display: flex;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    ul.nav-items {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    ul.nav-items-expanded {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    ul.nav-items-expanded {
-        line-height: 2;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        margin-top: 6em;
-    }
-}
-
 // Footer Styles
 
 .footer {
