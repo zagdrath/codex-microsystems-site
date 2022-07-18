@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+$font-stack: 'Fira Code', monospace;
+
+body {
+    font: 100% $font-stack;
+    font-size: 1em;
+    margin: 0 auto;
+    max-width: 55em;
+    line-height: 1.5;
+    padding: 2em;
+    background-color: #ebdbb2;
+    color: #3c3836;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #83a598;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+// Header Styles
+
+.nav {
+    display: flex;
+    align-items: center;
+    margin-top: 0em;
+    margin-bottom: 8em;
+    height: 3em;
+}
+
+.nav-logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-logo-image {
+    flex-basis: 40%;
+}
+
+.nav-items {
+    display: flex;
+    margin-left: auto;
+    list-style: none;
+}
+
+.nav-item {
+    font-weight: bold;
+    margin-left: 3em;
+}
+
+.nav-item-link {
+    text-decoration: none;
+    outline-offset: 1em;
+    color: #83a598;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+    color: #83a598;
+}
+
+.menu {
+    border: 0;
+    background-color: #ebdbb2;
+    display: none;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: flex;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        justify-content: space-between;
+    }
+
+    .menu {
+        margin-left: 0;
+    }
+
+    li.nav-item {
+        margin: 0;
+    }
+
+    ul.nav-items-expanded {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    ul.nav-items {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    ul.nav-items {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    ul.nav-items-expanded {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    ul.nav-items-expanded {
+        line-height: 2;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-top: 6em;
+    }
+}
+
+// Footer Styles
+
+.footer {
+    text-align: center;
+}
